@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- META TAG FOR RESPONSIVE DESIGN -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- INCLUDE MAIN.CSS -->
+    <link rel="stylesheet" href="./css/bundled.css">
+    <title>Am I unique?</title>
+</head>
+
+<body class="bg-secondary-color white-color">
+
+
+    <!-- HOME SCREEN STARTS -->
+    <div class="full-screen" id="home">
+        <div class="center-using-absolute">
+
+            <!-- TITLE -->
+            <h1 class="big-font-size">
+                Hello<span class="primary-color">.</span>
+            </h1>
+            <!-- SUBTITLE -->
+            <h3 class="primary-font">This is beautiful & responsive site.</h3>
+
+            <!-- LINE BREAK (UI PERSPECTIVE) -->
+            <br />
+
+            <!-- BUTTON WITH SLIGHTLY ROUNDED CORNERS -->
+            <button class="rounded-button bg-secondary-color white-color">
+                E X P L O R E
+            </button>
+
+        </div>
+    </div>
+    <!-- HOME SCREEN ENDS -->
+
+
+    <!-- FEATURE PAGE STARTS -->
+
+    <div id="feature" class="full-screen">
+
+        <span class="text-center">
+            <h2>Enter no. of shapes (1-50) : &nbsp;
+                <input type="number" min="1" max="50" class="decorative-input bg-secondary-color white-color numberOfShapes" />
+                &nbsp;&nbsp;
+                <button class="rounded-button white-color bg-secondary-color" id="generateShapes">O K</button>
+            </h2>
+        </span>
+
+        <!-- BR IS GOOD INSTEAD OF MARGIN -->
+        <br />
+        <br />
+        <br />
+
+        <!-- SHAPES IN GRID USING FLEXBOX STARTS -->
+        <div class="container" id="shapes">
+
+            <div class="box" data-id="1">
+                <div class="shape square"></div>
+                <button class="box-btn box-change-color" data-id="1">Change color</button>
+                <button class="box-btn box-change-shape" data-id="1">Change shape</button>
+                <button class="box-btn box-change-bg-color">Change back color</button>
+            </div>
+
+            <div class="box" data-id="1">
+                <div class="shape rectangle"></div>
+                <button class="box-btn box-change-color" data-id="1">Change color</button>
+                <button class="box-btn box-change-shape" data-id="1">Change shape</button>
+                <button class="box-btn box-change-bg-color">Change back color</button>
+            </div>
+
+            <div class="box" data-id="1">
+                    <div class="shape triangle"></div>
+                    <button class="box-btn box-change-color" data-id="1">Change color</button>
+                    <button class="box-btn box-change-shape" data-id="1">Change shape</button>
+                    <button class="box-btn box-change-bg-color">Change back color</button>
+            </div>
+
+            <div class="box" data-id="1">
+                    <div class="shape circle"></div>
+                    <button class="box-btn box-change-color" data-id="1">Change color</button>
+                    <button class="box-btn box-change-shape" data-id="1">Change shape</button>
+                    <button class="box-btn box-change-bg-color">Change back color</button>
+            </div>
+
+            <div class="box" data-id="1">
+                    <div class="shape parallel"></div>
+                    <button class="box-btn box-change-color" data-id="1">Change color</button>
+                    <button class="box-btn box-change-shape" data-id="1">Change shape</button>
+                    <button class="box-btn box-change-bg-color">Change back color</button>
+            </div>
+
+            <div class="box" data-id="1">
+                    <div class="shape diamond-square"></div>
+                    <button class="box-btn box-change-color" data-id="1">Change color</button>
+                    <button class="box-btn box-change-shape" data-id="1">Change shape</button>
+                    <button class="box-btn box-change-bg-color">Change back color</button>
+            </div>
+
+            <div class="box" data-id="1">
+                    <div class="shape"></div>
+                    <button class="box-btn box-change-color" data-id="1">Change color</button>
+                    <button class="box-btn box-change-shape" data-id="1">Change shape</button>
+                    <button class="box-btn box-change-bg-color">Change back color</button>
+                </div>
+    
+                <div class="box" data-id="1">
+                    <div class="shape rectangle"></div>
+                    <button class="box-btn box-change-color" data-id="1">Change color</button>
+                    <button class="box-btn box-change-shape" data-id="1">Change shape</button>
+                    <button class="box-btn box-change-bg-color">Change back color</button>
+                </div>
+    
+                <div class="box" data-id="1">
+                        <div class="shape triangle"></div>
+                        <button class="box-btn box-change-color" data-id="1">Change color</button>
+                        <button class="box-btn box-change-shape" data-id="1">Change shape</button>
+                        <button class="box-btn box-change-bg-color">Change back color</button>
+                </div>
+    
+                <div class="box" data-id="1">
+                        <div class="shape circle"></div>
+                        <button class="box-btn box-change-color" data-id="1">Change color</button>
+                        <button class="box-btn box-change-shape" data-id="1">Change shape</button>
+                        <button class="box-btn box-change-bg-color">Change back color</button>
+                </div>
+    
+                <div class="box" data-id="1">
+                        <div class="shape parallel"></div>
+                        <button class="box-btn box-change-color" data-id="1">Change color</button>
+                        <button class="box-btn box-change-shape" data-id="1">Change shape</button>
+                        <button class="box-btn box-change-bg-color">Change back color</button>
+                </div>
+    
+                <div class="box" data-id="1">
+                        <div class="shape diamond-square"></div>
+                        <button class="box-btn box-change-color" data-id="1">Change color</button>
+                        <button class="box-btn box-change-shape" data-id="1">Change shape</button>
+                        <button class="box-btn box-change-bg-color">Change back color</button>
+                </div>
+
+        </div>
+        <!-- SHAPES IN GRID ENDS -->
+
+    </div>
+
+    <!-- FEATURE PAGE ENDS -->
+
+    <!-- INCLUDE JQUERY SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- SHAPE GENERATOR JQUERY -->
+    <script src="./js/shapesGenerator.js"></script>
+
+</body>
+
+</html>

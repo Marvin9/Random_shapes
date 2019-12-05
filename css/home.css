@@ -1,0 +1,16 @@
+/* rounded button */
+#home button.rounded-button {
+    font-weight: bold;
+    cursor: pointer;
+    padding:20px 50px;
+    -webkit-box-shadow: -2px 5px 13px -5px rgba(0,0,0,0.36);
+    -moz-box-shadow: -2px 5px 13px -5px rgba(0,0,0,0.36);
+    box-shadow: -2px 5px 13px -5px rgba(0,0,0,0.36);
+    transition: .5s;
+}
+
+#home button.rounded-button:hover {
+    -webkit-box-shadow: -2px 5px 13px -5px rgba(0,0,0,0.60);
+    -moz-box-shadow: -2px 5px 13px -5px rgba(0,0,0,0.60);
+    box-shadow: -2px 5px 13px -5px rgba(0,0,0,0.60);
+}
