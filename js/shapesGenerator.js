@@ -17,7 +17,7 @@ $(document).ready(function() {
             let shape = randomShape();
 
             let code = `
-                <div class="box" data-id="${i}">
+                <div class="box" data-id="${i}" data-aos="${i % 2 === 0 ? 'fade-left' : 'fade-right'}">
                     <div class="shape ${shape}"></div>
                     <button class="box-btn box-change-color" data-id="${i}">Change Color</button>
                     <button class="box-btn box-change-shape" data-id="${i}">Change Shape</button>
