@@ -25,7 +25,6 @@ $(document).ready(function() {
                     <div class="shape ${shape}"></div>
                     <button class="box-btn box-change-color" data-id="${i}">Change Color</button>
                     <button class="box-btn box-change-shape" data-id="${i}">Change Shape</button>
-                    <button class="box-btn box-change-bg-color" data-id="${i}">Change Back Color</button>
                 </div>
             `;
 
