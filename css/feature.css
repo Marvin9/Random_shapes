@@ -45,6 +45,17 @@ input.decorative-input {
 }
 
 #feature button.box-btn {
+    margin:0 auto;
+    padding:10px 20px;
+    margin-bottom:10px;
+    cursor: pointer;
+    font-family: 'Arimo';
+    font-weight: bolder;
+    background: #fff;
+    color:#F23030!important;
+}
+
+#feature button.box-btn {
     display:block;
     color:#fff;
 }
@@ -53,14 +64,15 @@ input.decorative-input {
     width:100px;
     height:100px;
     margin:0 auto;
-    margin-bottom:20px;
+    margin-bottom:30px;
     border:2px solid #fff;
 }
 
 
 .rectangle {
+    margin-top:30px;
     width:100px;
-    height:50px;
+    height:70px;
 }
 
 .triangle {
@@ -82,5 +94,5 @@ input.decorative-input {
     width:90px;
     height:90px;
     transform: rotate(45deg);
-    margin-bottom:30px;
+    margin-bottom:40px;
 }
