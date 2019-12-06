@@ -10,6 +10,11 @@
 
     <!-- INCLUDE BUNDLED.CSS -->
     <link rel="stylesheet" href="./css/bundled.css">
+
+    <!-- AOS IS JUST AN ANIMATION LIBRARY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>Am I unique?</title>
 </head>
 
@@ -21,17 +26,17 @@
         <div class="center-using-absolute">
 
             <!-- TITLE -->
-            <h1 class="big-font-size">
-                Hello<span class="primary-color">.</span>
+            <h1 class="big-font-size" data-aos="fade-left">
+                Hello<span class="primary-color" data-aos="fade-right" data-aos-duration="1000">.</span>
             </h1>
             <!-- SUBTITLE -->
-            <h3 class="primary-font">This is beautiful & responsive site.</h3>
+            <h3 class="primary-font" data-aos="fade-right" data-aos-duration="2000">This is beautiful & responsive site.</h3>
 
             <!-- LINE BREAK (UI PERSPECTIVE) -->
             <br />
 
             <!-- BUTTON WITH SLIGHTLY ROUNDED CORNERS -->
-            <button class="rounded-button bg-secondary-color white-color">
+            <button class="rounded-button bg-secondary-color white-color" data-aos="fade-up" data-aos-offset="100" id="explore">
                 E X P L O R E
             </button>
 
@@ -58,13 +63,13 @@
         <br />
         <br />
 
-        <!-- SHAPES IN GRID USING FLEXBOX STARTS -->
+        <!-- SHAPES IN GRID USING FLEXBOX, STARTS -->
         <div class="container" id="shapes">
 
             <!-- HERE SHAPES WILL BE GENERATED DYNAMICALLY IN JS -->
 
         </div>
-        <!-- SHAPES IN GRID ENDS -->
+        <!-- SHAPES IN GRID, ENDS -->
 
     </div>
 
@@ -83,6 +88,19 @@
             let random = Math.floor(Math.random() * shapes.length);
             return shapes[random];
         }
+
+        AOS.init({
+            once : true
+        });
+
+        let featureOffsetFromTop = $('#feature').offset().top
+        
+        // when clicked on explore button
+        $('button#explore').click(function() {
+            $('html, body').animate({
+                scrollTop : featureOffsetFromTop
+            }, 1000);
+        });
     </script>
 
     <!-- SHAPE GENERATOR JQUERY -->
