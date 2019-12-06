@@ -46,7 +46,8 @@
 
         <span class="text-center">
             <h2>Enter no. of shapes (1-50) : &nbsp;
-                <input type="number" min="1" max="50" class="decorative-input bg-secondary-color white-color numberOfShapes" />
+                <input type="number" min="1" max="50"
+                    class="decorative-input bg-secondary-color white-color numberOfShapes" />
                 &nbsp;&nbsp;
                 <button class="rounded-button white-color bg-secondary-color" id="generateShapes">O K</button>
             </h2>
@@ -60,11 +61,7 @@
         <!-- SHAPES IN GRID USING FLEXBOX STARTS -->
         <div class="container" id="shapes">
 
-            <div class="box" data-id="1">
-                <div class="shape square"></div>
-                <button class="box-btn box-change-color" data-id="1">Change color</button>
-                <button class="box-btn box-change-shape" data-id="1">Change shape</button>
-            </div>
+            <!-- HERE SHAPES WILL BE GENERATED DYNAMICALLY IN JS -->
 
         </div>
         <!-- SHAPES IN GRID ENDS -->
@@ -76,8 +73,23 @@
     <!-- INCLUDE JQUERY SCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <!-- GLOBAL SHAPES -->
+    <script>
+
+        // shape class list
+        var shapes = ['square', 'rectangle', 'triangle', 'circle', 'parallel', 'diamond-square'];
+
+        function randomShape() {
+            let random = Math.floor(Math.random() * shapes.length);
+            return shapes[random];
+        }
+    </script>
+
     <!-- SHAPE GENERATOR JQUERY -->
     <script src="./js/shapesGenerator.js"></script>
+
+    <!-- SHAPE MODIFIER -->
+    <script src="./js/modifyShapes.js"></script>
 
 </body>
 

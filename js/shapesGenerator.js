@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-    // shape class list
-    var shapes = ['square', 'rectangle', 'triangle', 'circle', 'parallel', 'diamond-square'];
-
     // onclick O K button to generate shapes
     $('#generateShapes').click(function() {
 
@@ -17,8 +14,7 @@ $(document).ready(function() {
         for(var i = 0; i < numberOfShapes; i++) {
 
             // random shape from 5 shapes
-            let random = Math.floor(Math.random() * shapes.length);
-            let shape = shapes[random];
+            let shape = randomShape();
 
             let code = `
                 <div class="box" data-id="${i}">
